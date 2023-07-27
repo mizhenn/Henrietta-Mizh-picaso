@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="function.js"></script>
+    <title>Picasso - Purchase</title>
+    <nav>
+      <a href="./picasso.html">GALLERY</a>
+      <a href="./purchase-form.html">PURCHASE</a>
+    </nav>
+</head>
+<body>
+        <div class="purchase-form">
+            <h2>Interested in purchasing a Picasso Paint?</h2>
+            <p>Morbi tristique senectus et netus et malesuada fames ac turpis.</p>
+
+            <form action="thank_you.html" method="POST">
+                <label for="name">Name:</label>
+
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email" required>
+                
+                <button class ="submit" onclick="revealMessage()">
+                    <span title="What are you waiting for? Click it!">Submit</span>
+                </button>
+                <h1 id = "hiddenMessage" style = "display: none">Thank You!</h1>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
